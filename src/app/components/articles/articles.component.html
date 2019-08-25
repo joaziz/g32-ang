@@ -1,0 +1,24 @@
+<a class="btn btn-dark" [routerLink]="'/articles/create'">
+  Creeate Article
+</a>
+<br/>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">First</th>
+    <th scope="col">Last</th>
+    <th scope="col">Handle</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let article of articles">
+    <th scope="row">1</th>
+    <td>{{article.title}}</td>
+    <td>{{article.body}}</td>
+    <td>@mdo</td>
+  </tr>
+
+  </tbody>
+</table>
